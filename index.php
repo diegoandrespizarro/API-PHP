@@ -41,7 +41,7 @@ curl_close($ch);
     <section><img src="<?= $data['poster_url']; ?>" width="300" alt="Poster de <?= $data['title']; ?>"
     style="border-radius: 16px"/></section>
     <hgroup>
-    <h3><?= $data["title"]; ?> se estrena en <?= $data["days_until"]; ?> </h3>
+    <h3><?= $data["title"]; ?> </h3>
     <p>Fecha de estreno: <?= $data["release_date"]; ?> </p>
     <p>La siguiente es: <strong><?php echo $data['following_production']["title"]; ?></strong> y se estrenará el <strong><?php echo $data['release_date']; ?></strong>.</p>
     </hgroup>
