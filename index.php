@@ -25,7 +25,8 @@ if ($result === false) {
 // Cerrar la sesión cURL
 curl_close($ch);
 ?>
-
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <title>La próxima película de Marvel</title>
@@ -37,6 +38,7 @@ curl_close($ch);
   href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.classless.min.css"
 >
 </head>
+<body>
 <main>
     <section><img src="<?= $data['poster_url']; ?>" width="300" alt="Poster de <?= $data['title']; ?>"
     style="border-radius: 16px"/></section>
@@ -48,7 +50,7 @@ curl_close($ch);
 </main>
 
 <style>
-    :root{
+    :root {
         color-scheme: light dark;
     }
     body{
@@ -70,3 +72,5 @@ curl_close($ch);
         margin: 0 auto;
     }
 </style>
+</body>
+</html>
